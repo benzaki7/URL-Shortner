@@ -53,9 +53,9 @@
 }
 
 .shorten-btn {
-    width: 20%;
-    padding: 15px 0px;
-    background-color: #232931 ;
+    min-width: 25%;
+    padding: 15px 0;
+    background-color: #232931;
     color: #ffffff;
     font-size: clamp(1rem, 3vw, 1.2rem);
     font-weight: 400;
@@ -108,17 +108,17 @@ footer {
 @media screen and (max-width: 976px) {
     .input {
         width: 100%;
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
     #url {
-        width: 80%;
         font-size: 1.1rem;
     }
-
     .shorten-btn {
         margin-top: 4vh;
+    }
+    .alertBox {
+        font-size: 3.5rem;
     }
 }
 
@@ -128,5 +128,8 @@ footer {
     }
     #url::placeholder {
         font-size: .9rem;
+    }
+    .alertBox {
+        font-size: 2.5rem;
     }
 }

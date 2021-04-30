@@ -36,9 +36,9 @@ const shortenUrl = async () => {
 const renderResponse = (res) => {
     if(res.errors){
         input.value = "Sorry, couldn't format your URL.Try again.";
-    } else {  
+    } else {
         input.value = res.shortUrl;
-        shortenBtn.innerHTML = 'Copy';       
+        shortenBtn.innerHTML = 'Copy';
         input.addEventListener('keyup', function() {
             shortenBtn.innerHTML = 'Shorten';
         })
